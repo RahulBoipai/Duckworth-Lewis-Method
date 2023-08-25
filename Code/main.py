@@ -278,7 +278,8 @@ def main(args):
     model = DLModel()  # Initializing the model
     model = train_model(data, model)  # Training the model
     model.save(args['model_path'])  # Saving the model
-    
+
+    # if you want to load pretrained model uncomment this below line
     #model.load(args['model_path'])
     
     plot(model, args['plot_path'])  # Plotting the model
